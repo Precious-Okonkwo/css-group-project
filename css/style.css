@@ -106,7 +106,7 @@ header .desktop-nav {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
@@ -233,6 +233,195 @@ footer {
     font-family: "Lato", sans-serif;
 }
 
+.contact {
+    width: 100%;
+    min-height: calc(100vh - 4.5rem);
+    background-image: url(../images/cipasso\ background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h2 {
+    color: #f6f6f6;
+    text-align: center;
+    width: 90%;
+    max-width: 35rem;
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    z-index: 3;
+}
+
+.contact p {
+    color: #f6f6f6;
+    text-align: center;
+    width: 90%;
+    max-width: 35rem;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    z-index: 3;
+}
+
+.contact-container {
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.contact-info {
+    width: 60%;
+    max-width: 1180px;
+    padding: 0 1rem;
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+}
+
+.contact-info address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+    max-width: 45rem;
+    padding: 2rem 1rem;
+    margin: 0 1rem;
+}
+
+.contact-info address > h3 {
+    font-size: 1.3rem;
+    color: rgb(100, 7, 7);
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-info .address-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: rgb(100, 7, 7);
+    font-family: "Lato", sans-serif;
+}
+
+.contact-info .address-time {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-info .address-time > h4 {
+    font-size: 1rem;
+    color: rgb(100, 7, 7);
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-info .address-time > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    list-style: none;
+    color: rgb(100, 7, 7);
+    font-family: "Lato", sans-serif;
+}
+
+.contact-info .address-link  {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.8rem;
+}
+
+.address-link a {
+    text-decoration: none;
+}
+
+.address-link a:nth-child(2) {
+    color: rgb(255, 0, 21);
+}
+
+.contact-info form {
+    width: 90%;
+    max-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 2rem 1.2rem;
+    margin: 0 1rem;
+    background-color: rgb(100, 7, 7);
+    border-radius: 15px;
+}
+
+.contact-info form >h3 {
+    font-size: 1.3rem;
+    color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-info form fieldset {
+    padding: 1.3rem 1rem;
+    color: #f6f6f6;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    font-family: "Lato", sans-serif;
+}
+
+.contact-info fieldset > legend {
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+}
+
+.contact-info fieldset > label {
+    font-size: 0.9rem;
+}
+
+.contact-info fieldset > input {
+    outline: 0;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 5px;
+}
+
+.contact-info fieldset > textarea {
+    min-height: 7rem;
+    padding: 0.5rem;
+}
+
+.contact-info button {
+    background-color: rgb(255, 70, 2);
+    color: #f6f6f6;
+    padding: 0.9rem 3rem;
+    margin: 0.9rem 0;
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 15px;
+    font-weight: 700;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+}
+
+.contact-info button:hover {
+    filter: brightness(0.6)
+}
+
+.map {
+   width: 100%; 
+   margin: 4rem 0;
+}
+
+.map div {
+    width: 60%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
 
 @media (min-width: 768px) {
     .desktop-nav {
@@ -259,6 +448,17 @@ footer {
         font-size: 1.2rem;
     }
 
+    .contact {
+        min-height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .contact-info {
+       margin: 0 auto; 
+    }
 }
 
 
@@ -283,6 +483,11 @@ footer {
 
     .dishes-content {
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
 }
