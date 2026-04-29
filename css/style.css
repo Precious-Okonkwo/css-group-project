@@ -294,3 +294,157 @@ footer {
         margin: 0 auto;
     }
 }
+
+/* GALLERY STYLES */
+:root {
+    --black: rgb(3,3,3);
+    --deep-red: rgb(100,7,7);
+    --bright-red: rgb(248,7,7);
+    --orange-red: rgb(255,70,2);
+    --white: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.gal-container{
+    background-color: var(--orange-red);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+} 
+
+/* Hero Section with Parallax Effect */
+.gallery-hero {
+    position: relative;
+    height: 80vh;
+    background: url('../images/gal_hero.jpeg') center/cover no-repeat fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Using rgb(100,7,7) for a sophisticated gradient overlay */
+.gallery-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(3,3,3,0.9) 0%, rgba(100,7,7,0.4) 100%);
+}
+
+.gallery-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    cursor:none;
+}
+
+.gallery-hero .hero-content h1 {
+    font-size: clamp(3rem, 40vw, 6rem);
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 900;
+    color: var(--white);
+    text-shadow: 0 0 20px var(--bright-red); /* Glowing Effect */
+}
+
+.gallery-hero .hero-content p {
+    color: var(--orange-red);
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+
+/* Grid Layout */
+.gal_image-grid {
+    padding: 80px 5%;
+    background: radial-gradient(circle at top, var(--deep-red) 0%, var(--black) 50%);
+}
+
+.gal_image-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* The Grid Item */
+.gal_image-grid .grid-item {
+    position: relative;
+    aspect-ratio: 1/1;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--black);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid rgba(100,7,7, 0.3);
+}
+
+/* Grid Hover Effect */
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(248,7,7, 0.3);
+    border-color: var(--orange-red);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.5);
+    filter: grayscale(0%);
+}
+
+/* Overlay using the Red Palette */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(100,7,7,0.9), transparent);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.caption-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    font-size: 0.7rem;
+    color: var(--orange-red);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.caption {
+    font-size: 1.2rem;
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* Responsive settings for Tablets (max-width @1000px) and Mobile (max-width @600px) */
+@media (max-width: 1000px) { 
+    .gal_image-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+}
+@media (max-width: 600px) { 
+    .gal_image-grid { 
+        grid-template-columns: 1fr; 
+    } 
+}
