@@ -5,9 +5,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: #f4f1ec; /* light neutral added */
-  color: rgb(3, 3, 3);
+    font-family: 'open sans', sans-serif;
 }
 
 /* HEADINGS */
@@ -436,6 +434,7 @@ footer {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 1rem;
+} 
 
   /* HERO  */
 .about-hero {
@@ -495,6 +494,7 @@ footer {
 
 .hero h1 {
    font-size: 3rem;
+   font-family: 'Montserrat', sans-serif;
 }
 
 .contact-info {
@@ -608,10 +608,11 @@ footer {
   }
 }
 
-@media (min-width: 1300px) {
-  header nav {
+@media (min-width: 1300px) {   
+    header nav {
     width: 80%;
     max-width: 80rem;
     margin: 0 auto;
   }
 }
+
