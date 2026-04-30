@@ -234,66 +234,6 @@ footer {
 }
 
 
-@media (min-width: 768px) {
-    .desktop-nav {
-        display: none;
-    }
-
-    .hero {
-        min-height: 70vh;
-    }
-
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.7rem;
-    }
-
-    .welcome h2 {
-        font-size: 2rem;
-    }
-
-    .welcome p {
-        font-size: 1.2rem;
-    }
-
-}
-
-
-@media (min-width: 1000px) {
-
-    header .mobile{
-        display: none;
-    }
-
-   .top-nav button {
-        display: none;
-    }
-
-    header .mobile {
-        display: none;
-    }
-
-    header .desktop-nav {
-        display: flex;
-        gap: 3rem;
-    }
-
-    .dishes-content {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-    }
-}
-
-@media (min-width: 1300px) {
-    header nav {
-        width: 80%;
-        max-width: 80rem;
-        margin: 0 auto;
-    }
-}
 
 /* GALLERY STYLES */
 :root {
@@ -437,14 +377,81 @@ html {
     font-weight: 600;
 }
 
-/* Responsive settings for Tablets (max-width @1000px) and Mobile (max-width @600px) */
-@media (max-width: 1000px) { 
-    .gal_image-grid { 
-        grid-template-columns: repeat(2, 1fr); 
-    } 
-}
-@media (max-width: 600px) { 
+/* MEDIA QUERY */
+
+@media (min-width: 320px) {
     .gal_image-grid { 
         grid-template-columns: 1fr; 
-    } 
+        grid-template-rows: auto;
+}
+    
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.7rem;
+    }
+
+    .welcome h2 {
+        font-size: 2rem;
+    }
+
+    .welcome p {
+        font-size: 1.2rem;
+    }
+    .gal_image-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    header .mobile{
+        display: none;
+    }
+
+   .top-nav button {
+        display: none;
+    }
+
+    header .mobile {
+        display: none;
+    }
+
+    header .desktop-nav {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .dishes-content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    .gal_image-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+    
+}
+
+@media (min-width: 1300px) {
+    header nav {
+        width: 80%;
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+    .gal_image-grid { 
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: auto;
 }
