@@ -156,12 +156,12 @@ header .desktop-nav {
 }
 
 .welcome h2 {
-    width: 90%;
-    max-width: 35rem;
-    text-align: center;
-    color: rgb(100, 7, 7);
-    font-size: 1.7rem;
-    font-family: "Montserrat", sans-serif;
+  width: 90%;
+  max-width: 35rem;
+  text-align: center;
+  color: rgb(100, 7, 7);
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .welcome p {
@@ -251,18 +251,18 @@ footer {
 }
 
 .contact {
-    width: 100%;
-    min-height: calc(100vh - 4.5rem);
-    background-image: url(../images/cipasso\ background.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 4.5rem);
+  background-image: url(../images/cipasso\ background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact h2 {
@@ -344,12 +344,14 @@ html {
     scroll-behavior: smooth;
 }
 
-.gal-container{
-    background-color: var(--orange-red);
+.gal-container {
+   background-color: var(--orange-red);
     color: var(--white);
     font-family: 'Inter', sans-serif;
     margin: 0;
     overflow-x: hidden;
+}
+
 .contact-info .address-time > h4 {
     font-size: 1rem;
     font-family: "Lato", sans-serif;
@@ -605,81 +607,81 @@ html {
 /* MEDIA QUERY */
 
 @media (min-width: 320px) {
-    .gal_image-grid { 
-        grid-template-columns: 1fr; 
-        grid-template-rows: auto;
-    }
+  .gal_image-grid { 
+      grid-template-columns: 1fr; 
+      grid-template-rows: auto;
+  }
 }
     
 @media (min-width: 768px) {
-    .desktop-nav {
-        display: none;
-    }
+  .desktop-nav {
+    display: none;
+  }
 
-    .hero {
-        min-height: 70vh;
-    }
+  .hero {
+      min-height: 70vh;
+  }
 
-    .hero h1 {
-        font-size: 3rem;
-    }
+  .hero h1 {
+    font-size: 3rem;
+ }
 
-    .hero p {
-        font-size: 1.7rem;
-    }
+  .hero p {
+    font-size: 1.7rem;
+  }
 
-    .welcome h2 {
-        font-size: 2rem;
-    }
+  .welcome h2 {
+    font-size: 2rem;
+  }
 
-    .welcome p {
-        font-size: 1.2rem;
-    }
-    .gal_image-grid { 
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: auto;
-    }
+  .welcome p {
+    font-size: 1.2rem;
+  }
 
+ .gal_image-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto;
+  }
 }
-
 
 @media (min-width: 1000px) {
 
-    header .mobile{
-        display: none;
-    }
+  header .mobile{
+    display: none;
+  }
 
-   .top-nav button {
-        display: none;
-    }
+  .top-nav button {
+    display: none;
+  }
 
-    header .mobile {
-        display: none;
-    }
+  header .mobile {
+    display: none;
+  }
 
-    header .desktop-nav {
-        display: flex;
-        gap: 3rem;
-    }
+  header .desktop-nav {
+    display: flex;
+    gap: 3rem;
+  }
 
-    .dishes-content {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-    }
-    .gal_image-grid { 
-        grid-template-columns: repeat(3, 1fr); 
-    }
-    
+  .dishes-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .gal_image-grid { 
+    grid-template-columns: repeat(3, 1fr); 
+  }   
 }
 
-@media (min-width: 1300px) {
-    header nav {
-        width: 80%;
-        max-width: 80rem;
-        margin: 0 auto;
-    }
-    .gal_image-grid { 
-        grid-template-columns: repeat(4, 1fr); 
-        grid-template-rows: auto;
-    }
+@media (min-width 1300px) {
+  header nav {
+    width: 80%;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  .gal_image-grid { 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto;
+  }
 }
