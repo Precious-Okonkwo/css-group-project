@@ -383,6 +383,7 @@ html {
     .gal_image-grid { 
         grid-template-columns: 1fr; 
         grid-template-rows: auto;
+    }
 }
     
 @media (min-width: 768px) {
@@ -442,6 +443,7 @@ html {
     }
     .gal_image-grid { 
         grid-template-columns: repeat(3, 1fr); 
+    }
     
 }
 
@@ -454,4 +456,5 @@ html {
     .gal_image-grid { 
         grid-template-columns: repeat(4, 1fr); 
         grid-template-rows: auto;
+    }
 }
