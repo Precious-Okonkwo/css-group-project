@@ -331,6 +331,25 @@ footer {
     gap: 1rem;
 }
 
+
+/* GALLERY STYLES */
+:root {
+    --black: rgb(3,3,3);
+    --deep-red: rgb(100,7,7);
+    --bright-red: rgb(248,7,7);
+    --orange-red: rgb(255,70,2);
+    --white: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.gal-container{
+    background-color: var(--orange-red);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
 .contact-info .address-time > h4 {
     font-size: 1rem;
     font-family: "Lato", sans-serif;
@@ -583,44 +602,84 @@ footer {
   }
 }
 
+/* MEDIA QUERY */
+
+@media (min-width: 320px) {
+    .gal_image-grid { 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+    }
+}
+    
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.7rem;
+    }
+
+    .welcome h2 {
+        font-size: 2rem;
+    }
+
+    .welcome p {
+        font-size: 1.2rem;
+    }
+    .gal_image-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+    }
+
+}
+
+
 @media (min-width: 1000px) {
-  header .mobile {
-    display: none;
-  }
 
-  .dishes-content {
-     grid-template-columns: repeat(3, 1fr);
-     grid-template-rows: auto;
-  }
+    header .mobile{
+        display: none;
+    }
 
-  .contact-info {
-     grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: auto;
-  }
-  .top-nav button {
-    display: none;
-  }
+   .top-nav button {
+        display: none;
+    }
 
-  header .mobile {
-    display: none;
-  }
+    header .mobile {
+        display: none;
+    }
 
-  header .desktop-nav {
-    display: flex;
-    gap: 3rem;
-  }
+    header .desktop-nav {
+        display: flex;
+        gap: 3rem;
+    }
 
-  .dishes-content {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-  }
+    .dishes-content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    .gal_image-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    
 }
 
-@media (min-width: 1300px) {   
+@media (min-width: 1300px) {
     header nav {
-    width: 80%;
-    max-width: 80rem;
-    margin: 0 auto;
-  }
+        width: 80%;
+        max-width: 80rem;
+        margin: 0 auto;
+    }
+    .gal_image-grid { 
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: auto;
+    }
 }
-
