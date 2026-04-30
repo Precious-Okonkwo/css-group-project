@@ -4,22 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  background: #f4f1ec; /* light neutral added */
-  color: rgb(3, 3, 3);
-}
-
-/* HEADINGS */
-h1,
-h2,
-h3 {
-  font-family: 'Playfair Display', serif;
-  margin: 0.5rem 0;
-}
-p {
-  margin: 0.5rem 0;
-}
 /*Navigation bar*/
 header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
