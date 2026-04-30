@@ -537,8 +537,8 @@ html {
 .about-hero {
   height: 75vh;
   background:
-    linear-gradient(rgba(3, 3, 3, 0.5), rgba(3, 3, 3, 0.5)),
-    url('/images/restaurant1.jpeg') center/cover no-repeat;
+  linear-gradient(rgba(3, 3, 3, 0.5), rgba(3, 3, 3, 0.5)),
+  url('/images/restaurant1.jpeg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -546,20 +546,71 @@ html {
   text-align: center;
 }
 
+.about-hero h1 {
+  color: #f6f6f6;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 3;
+}
+
+.about-hero p {
+   color: #f6f6f6;
+  text-align: center;
+  width: 90%;
+  max-width: 35rem;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  z-index: 3
+}
+
 /* CONTAINER */
-.container {
+.mission .container {
   padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* STORY */
 .story {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto, auto;
   gap: 50px;
   background: white;
   margin: 40px;
   padding: 40px;
   border-radius: 12px;
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.story h2 {
+  width: 90%;
+  max-width: 35rem;
+  text-align: center;
+  color: rgb(100, 7, 7);
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.story p {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  width: 90%;
+  max-width: 35rem;
+  line-height: 1.5rem;
+  color: rgb(100, 7, 7);
 }
 
 /* IMAGE */
@@ -580,18 +631,32 @@ html {
 /* MISSION */
 .mission {
   background: rgb(100, 7, 7);
-  color: white;
-  text-align: center;
+  color: #f6f6f6;
   padding: 60px 20px;
+}
+
+.mission h2 {
+  width: 90%;
+  max-width: 35rem;
+  text-align: center;
+  color: #f6f6f6;
+  font-weight: 800;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mission p {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  width: 90%;
+  max-width: 35rem;
+  line-height: 1.5rem;
+  color: #f6f6f6;
 }
 
 .contact {
    min-height: 60vh;
-}
-
-.hero h1 {
-   font-size: 3rem;
-   font-family: 'Montserrat', sans-serif;
 }
 
 .contact-info {
@@ -601,7 +666,8 @@ html {
 /* CHEF */
 .chef {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows:  auto, auto;
   align-items: center;
   gap: 40px;
   background: white;
@@ -610,22 +676,55 @@ html {
   border-radius: 12px;
 }
 
+.chef-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .chef h2 {
+  width: 90%;
+  max-width: 35rem;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
   color: rgb(100, 7, 7);
 }
 
+.chef p {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  width: 90%;
+  max-width: 35rem;
+  line-height: 1.5rem;
+  color: rgb(100,7,7);
+}
 /* GALLERY */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 170px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,  170px);
   gap: 15px;
 }
 
-/* CENTER */
-.center {
+.gallery-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gallery-section h2 {
+  width: 90%;
+  max-width: 35rem;
   text-align: center;
-  margin-bottom: 30px;
+  font-weight: 800;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(100, 7, 7);
 }
 
 /* RESPONSIVE */
@@ -652,6 +751,19 @@ html {
   .gal_image-grid { 
       grid-template-columns: 1fr; 
       grid-template-rows: auto;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,  170px);
+  }
+
+  .chef {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto, auto;
+  }
+  .story {
+   grid-template-columns: 1fr;
+  grid-template-rows: auto; 
   }
 }
     
@@ -688,6 +800,21 @@ html {
   .gallery-hero {
     min-height: 70vh;
   }
+  
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 170px;
+  }
+
+  .chef {
+    grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  }
+
+  .story {
+    grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto, auto;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -717,7 +844,12 @@ html {
   .gal_image-grid { 
     grid-template-columns: repeat(3, 1fr);
   
-  }   
+  }
+  
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 170px;
+  }
 }
 
 @media (min-width: 1300px) {
