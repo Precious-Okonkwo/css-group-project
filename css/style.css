@@ -1,3 +1,6 @@
+/* GROUP PROJECT FOR GROUP 20 - CiPASSO ITALIAN RESTAURANT
+   CONTRIBUTOR: OKONKWO PRECIOUS IFEBUCHE, CHIMA FRANKLIN NNAJI, LISA OKAFOR, AGU CHIEMELIE EMMANUEL */
+
 * {
   margin: 0;
   padding: 0;
@@ -84,6 +87,7 @@ header .desktop-nav {
   font-size: 1.2rem;
 }
 
+/* Hero Section */
 .hero {
   width: 100%;
   min-height: calc(100vh - 4.5rem);
@@ -236,6 +240,7 @@ footer {
   font-family: 'Lato', sans-serif;
 }
 
+/* Contact Section */
 .contact {
   width: 100%;
   min-height: calc(100vh - 4.5rem);
@@ -256,6 +261,8 @@ footer {
   text-align: center;
   width: 90%;
   max-width: 35rem;
+  font-weight: 800;
+  text-transform: capitalize;
   font-size: 2.5rem;
   font-family: "Montserrat", sans-serif;
   z-index: 3;
@@ -272,8 +279,8 @@ footer {
 }
 
 .contact-container {
-    width: 100%;
-    margin: 4rem 0;
+  width: 100%;
+  margin: 4rem 0;
 }
 
 .contact-info {
@@ -317,26 +324,6 @@ footer {
     gap: 1rem;
 }
 
-/* GALLERY STYLES */
-:root {
-    --black: rgb(3,3,3);
-    --deep-red: rgb(100,7,7);
-    --bright-red: rgb(248,7,7);
-    --orange-red: rgb(255,70,2);
-    --white: #ffffff;
-}
-html {
-    scroll-behavior: smooth;
-}
-
-.gal-container {
-  margin: 4rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background-color: rgb(100,7,7);
-}
-
 .contact-info .address-time > h4 {
     font-size: 1rem;
     font-family: "Lato", sans-serif;
@@ -345,53 +332,6 @@ html {
     max-width: 35rem;
     color: rgb(100, 7, 7);
     font-family: "Montserrat", sans-serif;
-}
-
-.gallery-hero {
-  position: relative;
-  width: 100%;
-  min-height: calc(100vh - 4.5rem);
-  background: url('../images/gal_hero.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.gallery-hero .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(3,3,3,0.9) 0%, rgba(100,7,7,0.4) 100%);
-}
-
-.gallery-hero h1 {
-  color: #f6f6f6;
-  text-align: center;
-  width: 90%;
-  max-width: 35rem;
-  font-size: 2.5rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  z-index: 3;
-}
-
-.gallery-hero p {
-  color: #f6f6f6;
-  text-align: center;
-  width: 90%;
-  max-width: 35rem;
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  z-index: 3
 }
 
 .contact-info .address-time > ul {
@@ -411,29 +351,6 @@ html {
 
 .address-link a {
     text-decoration: none;
-}
-
-
-.gal_image-grid { 
-  width: 60%;
-  max-width: 1180px;
-  padding: 1rem 0;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr; 
-  grid-template-rows: auto;
-  gap: 0.5rem;
-}
-
-.gal_image-grid .grid-item > img {
-    width: 100%;
-    height: 90%;
-  }
-
-.gal_image-grid .grid-item {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .address-link a:nth-child(2) {
@@ -533,7 +450,103 @@ html {
     padding: 0 1rem;
 } 
 
-  /* HERO  */
+/* GALLERY STYLES */
+:root {
+    --black: rgb(3,3,3);
+    --deep-red: rgb(100,7,7);
+    --bright-red: rgb(248,7,7);
+    --orange-red: rgb(255,70,2);
+    --white: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.gal-container {
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(100,7,7);
+}
+
+
+.gallery-hero {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 4.5rem);
+  background: url('../images/gal_hero.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.gallery-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(3,3,3,0.9) 0%, rgba(100,7,7,0.4) 100%);
+}
+
+.gallery-hero h1 {
+  color: #f6f6f6;
+  text-align: center;
+  width: 90%;
+  max-width: 35rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  z-index: 3;
+}
+
+.gallery-hero p {
+  color: #f6f6f6;
+  text-align: center;
+  width: 90%;
+  max-width: 35rem;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  z-index: 3
+}
+
+
+.gal_image-grid { 
+  width: 60%;
+  max-width: 1180px;
+  padding: 1rem 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto;
+  gap: 0.5rem;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.gal_image-grid .grid-item > img {
+    width: 100%;
+    height: 90%;
+  }
+
+.gal_image-grid .grid-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+  /* About Section  */
 .about-hero {
   height: 75vh;
   background:
@@ -727,9 +740,7 @@ html {
   color: rgb(100, 7, 7);
 }
 
-/* STYLING FOR MENU TAB*/
-
-/* Menu Specific Hero */
+/* Menu Hero */
 .menu-hero {
     background: url('../images/menhero.jpeg') center/cover no-repeat fixed;
     width: auto;
@@ -744,6 +755,7 @@ html {
     background-color: var(--deep-red);
     color: var(--white);
     text-align: center;
+    margin: 1rem 0;
     padding: 30px;
     font-style: italic;
     font-size: 1.2rem;
@@ -767,7 +779,8 @@ html {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 Columns on Desktop */
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px; 
     gap: 40px;
 }
 
@@ -823,25 +836,6 @@ flex: 1;
     font-weight: 400;
 }
 
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .story,
-  .chef {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 500px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* MEDIA QUERY */
 
 @media (min-width: 320px) {
@@ -849,10 +843,7 @@ flex: 1;
       grid-template-columns: 1fr; 
       grid-template-rows: auto;
   }
-  .menu-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
+ 
   .gallery {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,  170px);
@@ -865,6 +856,11 @@ flex: 1;
   .story {
    grid-template-columns: 1fr;
   grid-template-rows: auto; 
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px; 
   }
 }
     
@@ -891,6 +887,11 @@ flex: 1;
 
   .welcome p {
     font-size: 1.2rem;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
   }
 
  .gal_image-grid { 
@@ -942,6 +943,11 @@ flex: 1;
     grid-template-rows: auto;
   }
 
+  .contact-info {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
   .gal_image-grid { 
     grid-template-columns: repeat(3, 1fr);
   
@@ -950,6 +956,11 @@ flex: 1;
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 170px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px; 
   }
 }
 
