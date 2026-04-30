@@ -1,0 +1,166 @@
+<!-- OKONKWO PRECIOUS IFEBUCHE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiPASSO RESTAURANT</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+          
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <span>CiPASSO</span>
+            </div>
+
+            <ul class="desktop-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="contact.html"class="active" >Contact Us</a></li>
+            </ul>
+
+            <div class="top-nav">
+                <!-- Mobile hamburger -->
+                <button><i class="fa-solid fa-bars"></i></button>
+
+                <!-- Mobile dropdown -->
+                <ul class="mobile">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./menu.html">Menu</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+
+            <p>At CiPASSO, every moment is crafted with elegance. Kindly contact us for reservation or private dining requests, and allow us to create a truly memorable experience for you.</p>
+
+            <div class="overlay"></div>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+
+                <address>
+                    <h3>Contact Information</h3>
+                    <div class="address-details">
+
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Via Metastasio, 21, 00186 Roma RM, Italy
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+
+                            +390668892620
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+
+                            cipasso.roma@gmail.com
+                        </div>
+                    </div>
+
+                   <div class="address-time">
+                       <h4>Opening Hours</h4>
+                        <ul>
+                          <li>Monday: 5:30am-11:00pm</li>
+
+                          <li>Tuesday: 5:30am - 11:00pm</li>
+
+                          <li>Wednesday: 5:30am - 11:00pm</li>
+
+                          <li>Thursday: 5:30am - 11:00pm</li>
+
+                          <li>Friday: 5:30am - 11:00pm</li>
+
+                          <li>Saturday: 5:30am - 11:00pm</li>
+
+                          <li>Sunday: 12:00pm - 3:30pm</li>
+
+                        </ul>
+                   </div>
+
+                    <div class="address-link">
+                        <a href="https://www.facebook.com/share/1GtCAKpuxP/?mibextid=wwXIfr">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/cipassoroma?igsh=MTdwanNnamhmcHNzcA=="><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </address>
+                    
+                <form>
+                    <h3>Make a Reservation</h3>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" placeholder="Enter your first name">
+
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" placeholder="Enter your last name">
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="+390544478000">
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="@example.com">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Visiting Information</legend>
+                        <label for="date">Date of Visiting</label>
+                        <input type="date" id="date">
+
+                        <label for="time">Time of Visiting</label>
+                        <input type="time" id="time">
+
+                        <label for="number">Number of Guests</label>
+                        <input type="number" id="number">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Special Request</legend>
+                        <label for="request">Special Requests</label>
+                        <textarea name="request" id="request" placeholder="Enter your request here"></textarea>
+                    </fieldset>
+
+                    <button type="submit">Submit</button> 
+                </form>
+            </div>
+        </section>
+
+        <section class="map">
+            
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.573813228394!2d12.475890799999998!3d41.9020219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f614297416091%3A0x31aeccf34c0e27fa!2sCiPASSO!5e0!3m2!1sen!2sng!4v1777395208183!5m2!1sen!2sng" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+       &copy; 2026 CiPASSO | All Right Reserved
+    </footer>
+</body>
+</html>
