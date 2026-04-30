@@ -156,9 +156,12 @@ header .desktop-nav {
 }
 
 .welcome h2 {
-  font-size: 1.7rem;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(100, 7, 7);
+    width: 90%;
+    max-width: 35rem;
+    text-align: center;
+    color: rgb(100, 7, 7);
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .welcome p {
@@ -166,6 +169,7 @@ header .desktop-nav {
   font-family: 'Lato', sans-serif;
   text-align: center;
   width: 90%;
+  max-width: 35rem;
   color: rgb(100, 7, 7);
 }
 
@@ -307,10 +311,9 @@ footer {
     margin: 0 1rem;
 }
 
-.welcome h2 {
-    width: 90%;
-    max-width: 35rem;
-    font-size: 1.7rem;
+.contact-info address > h3 {
+    font-size: 1.3rem;
+    color: rgb(100, 7, 7);
     font-family: "Montserrat", sans-serif;
 }
 
