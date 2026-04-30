@@ -425,12 +425,12 @@ html {
   gap: 0.5rem;
 }
 
-  .gal_image-grid .grid-item > img {
+.gal_image-grid .grid-item > img {
     width: 100%;
     height: 90%;
   }
 
-  .gal_image-grid .grid-item {
+.gal_image-grid .grid-item {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -628,6 +628,103 @@ html {
   margin-bottom: 30px;
 }
 
+/* STYLING FOR MENU TAB*/
+
+/* Menu Specific Hero */
+.menu-hero {
+    background: url('../images/menhero.jpeg') center/cover no-repeat fixed;
+    width: auto;
+    height: 65vh;
+    display: flex;
+    position: sticky;
+    z-index: 1;
+}
+
+/* Special Note Section */
+.special-note {
+    background-color: var(--deep-red);
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+    font-style: italic;
+    font-size: 1.2rem;
+    border-bottom: 5px solid var(--orange-red);
+}
+
+/* Menu Grid (Requirement: 2-3 Columns on Desktop) */
+.menu-container {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.category-title {
+    color: var(--orange-red);
+    text-transform: uppercase;
+    border-left: 5px solid var(--bright-red);
+    padding-left: 15px;
+    margin: 50px 0 30px 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 Columns on Desktop */
+    gap: 40px;
+}
+
+.menu-item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(100,7,7, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.02);
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--bright-red);
+}
+
+.item-info {
+flex: 1;
+}
+
+.item-info h3 {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.item-info .price {
+    color: var(--white); 
+    border:0.3px solid;
+    border-radius: 3px; padding:3px; background-color: var(--orange-red);
+}
+
+.item-info p {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+.item-info button{
+    height: 2rem;
+    border:none;
+    color: var(--white);
+    background-color: var(--orange-red);
+    padding: 3px;
+    border-radius:5px;
+    font-weight: 400;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .story,
@@ -653,6 +750,10 @@ html {
       grid-template-columns: 1fr; 
       grid-template-rows: auto;
   }
+  .menu-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }
     
 @media (min-width: 768px) {
