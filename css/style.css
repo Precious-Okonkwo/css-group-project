@@ -614,32 +614,6 @@ html {
   }
 }
 
-@media (min-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  .hero {
-    min-height: 70vh;
-  }
-
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .hero p {
-    font-size: 1.7rem;
-  }
-
-  .welcome h2 {
-    font-size: 2rem;
-  }
-
-  .welcome p {
-    font-size: 1.2rem;
-  }
-}
-
 /* MEDIA QUERY */
 
 @media (min-width: 320px) {
@@ -705,11 +679,12 @@ html {
   }
 
   .gal_image-grid { 
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
+  
   }   
 }
 
-@media (min-width 1300px) {
+@media (min-width: 1300px) {
   header nav {
     width: 80%;
     max-width: 80rem;
