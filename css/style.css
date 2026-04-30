@@ -309,9 +309,10 @@ footer {
     margin: 0 1rem;
 }
 
-.contact-info address > h3 {
-    font-size: 1.3rem;
-    color: rgb(100, 7, 7);
+.welcome h2 {
+    width: 90%;
+    max-width: 35rem;
+    font-size: 1.7rem;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -331,6 +332,10 @@ footer {
 
 .contact-info .address-time > h4 {
     font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    width: 90%;
+    max-width: 35rem;
     color: rgb(100, 7, 7);
     font-family: "Montserrat", sans-serif;
 }
