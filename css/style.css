@@ -549,9 +549,11 @@ html {
   /* About Section  */
 .about-hero {
   height: 75vh;
-  background:
-  linear-gradient(rgba(3, 3, 3, 0.5), rgba(3, 3, 3, 0.5)),
-  url('/images/restaurant1.jpeg') center/cover no-repeat;
+  background-image: url(../images/restaurant1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
