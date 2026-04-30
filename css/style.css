@@ -255,7 +255,7 @@ html {
     overflow-x: hidden;
 } 
 
-/* Hero Section with Parallax Effect */
+
 .gallery-hero {
     position: relative;
     height: 80vh;
@@ -266,7 +266,6 @@ html {
     overflow: hidden;
 }
 
-/* Using rgb(100,7,7) for a sophisticated gradient overlay */
 .gallery-hero .hero-overlay {
     position: absolute;
     top: 0;
@@ -289,7 +288,7 @@ html {
     margin: 0;
     font-weight: 900;
     color: var(--white);
-    text-shadow: 0 0 20px var(--bright-red); /* Glowing Effect */
+    text-shadow: 0 0 20px var(--bright-red); 
 }
 
 .gallery-hero .hero-content p {
@@ -342,8 +341,8 @@ html {
     filter: grayscale(0%);
 }
 
-/* Overlay using the Red Palette */
-.overlay {
+/* Overlay */
+.gal_image-grid .overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(100,7,7,0.9), transparent);
